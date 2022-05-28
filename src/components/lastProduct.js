@@ -13,9 +13,9 @@ function LastProduct() {
         .then(res => res.json())
         .then(data => {
             setProduct({    
-                description: data.meta.lastProducts[0].description,
-                location: "http://localhost:3030/images/uploadProducts/"+ data.meta.lastProducts[0].images[0].name,
-                urlProduct: "http://localhost:3030/productos/detail/"+ data.meta.lastProducts[0].id
+                description: data.meta.lastProducts[0].name,
+                location: "http://localhost:3030/images/"+ data.meta.lastProducts[0].image_ppal,
+                urlProduct: "http://localhost:3030/bproduct/detalle/"+ data.meta.lastProducts[0].id
             })
 
         })
