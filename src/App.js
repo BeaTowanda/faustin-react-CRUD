@@ -5,6 +5,7 @@ import TopBar from "./components/topBar";
 import PageHeading from "./components/pageHeading";
 import ContRow from "./components/contRow";
 import ContentRow2 from "./components/contentRow2";
+import ContentRow3 from "./components/contentRow3";
 import Footer from "./components/footer";
 import Title from "./components/title";
 import DataBase from "./components/dataBase";
@@ -26,6 +27,7 @@ function App() {
             <ContentRow2/>
             <Title />
             <DataBase />
+            <ContentRow3/>
             <TittleUser />
             <DataUsers />
           </div>
