@@ -1,6 +1,7 @@
 import {useState, useEffect} from "react";
 import CardCategory from "./cardCategory";
 import CardColection from "./cardColection";
+import CardYear from "./cardYear";
 
 function Category(){
     let [categories, setCategories] = useState([{name:"Ninguna Categoria"}]);
@@ -14,7 +15,6 @@ function Category(){
 
     },[]) 
 
-//function Colection(){
     let [colection, setColection] = useState([{name:"Ninguna Colección"}]);
     
     useEffect(()=>{
@@ -26,6 +26,16 @@ function Category(){
     
     },[])
 
+    let [year, setYear] = useState([{name:"Ningun AÑO"}]);
+    
+    useEffect(()=>{
+        fetch("http://localhost:3030/api/yearCategories")
+       .then(res => res.json())
+        .then(data => {
+            setYear(data.meta.quantityProducts)
+            })
+    
+    },[])
 
     return (
         <div className="col-lg-6 mb-4">
@@ -41,7 +51,12 @@ function Category(){
                     </div>
                     <div className="row">
                         { colection.map((colection, i) =>
-                            <CardColection key={i} nameColection={colection.name} quantity={colection.count} />)
+                            <CardColection key={i} nameCategory= {"Coleccion "+colection.name} quantity={colection.count} />)
+                        }
+                    </div>
+                    <div className="row">
+                        { year.map((year, i) =>
+                            <CardYear key={i} nameCategory= {"AÑO "+year.name} quantity={year.count} />)
                         }
                     </div>
                 </div>

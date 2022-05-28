@@ -5,8 +5,8 @@ let datos = [
         name: "Ninguna información",
         description:"Ninguna información",
         price:"$0",
-        colection: ["Ninguna información"],
-        colors:["Ninguna infomación"],
+        type: ["Ninguna información"],
+        colection:["Ninguna infomación"],
         discount: 0
     }
 ]
@@ -24,6 +24,7 @@ function DataBase(){
         })
         
     },[])
+   
     
     return (
         <div className="card shadow mb-4">
@@ -35,8 +36,8 @@ function DataBase(){
                                 <th>Name</th>
                                 <th>Description</th>
                                 <th>Price</th>
+                                <th>Type</th>
                                 <th>Colection</th>
-                                <th>Colors</th>
                                 <th>Discount</th>
                             </tr>
                         </thead>
@@ -45,8 +46,8 @@ function DataBase(){
                                 <th>Name</th>
                                 <th>Description</th>
                                 <th>Price</th>
+                                <th>Type</th>
                                 <th>Colection</th>
-                                <th>Colors</th>
                                 <th>Discount</th>
                             </tr>
                         </tfoot>
@@ -56,9 +57,8 @@ function DataBase(){
                                 name= {dato.name}
                                 description= {dato.description}
                                 price={dato.price}
-                                colection= {dato.id_colection}
-                                
-                                discount= {dato.dto}
+   
+                                discount={dato.dto}
                             />
                         )}
                     </table>

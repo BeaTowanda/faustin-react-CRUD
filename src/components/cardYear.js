@@ -1,6 +1,6 @@
 import react from "react";
 
-function CardCategory({nameCategory, quantity}){
+function CardYear({nameCategory, quantity}){
     return (
         <div className="col-lg-6 mb-4">
             <div className="card bg-info text-black shadow">
@@ -13,4 +13,4 @@ function CardCategory({nameCategory, quantity}){
     )
 }
 
-export default CardCategory;
+export default CardYear;

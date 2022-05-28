@@ -2,20 +2,20 @@ import React, {useState} from "react";
 import PropTypes from "prop-types";
 
 
-function InfoTable({name, description, price, id_colection, dto}) {
+function InfoTable({name, description, price,type_name, dto}) {
     return (
         <tbody>
             <tr>
                 <td>{name}</td>
-             {/*  <td>{description}</td>
+                <td>{description}</td>
                 <td>{price}</td>
                 <td>
                     <ul>
-                        <li>{id_colection}</li>
+                        <li>{type_name}</li>
                     </ul>
                 </td>
                 <td>
-                    <ul>
+                   {/*} <ul>
                         {colors.map((color, i) => 
                         <li key={i}>
                             <span key={i} > 
@@ -23,21 +23,22 @@ function InfoTable({name, description, price, id_colection, dto}) {
                             </span>
                         </li> 
                         )}
-                    </ul>
+                        </ul> */}
                 </td>
-                        <td>{dto}</td> */}
+                        <td>{dto}</td> 
             </tr>
         </tbody>
     )
 }
 
 InfoTable.propTypes ={
-    name: PropTypes.string.isRequired
-}
-  { /*}  description: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+
+   description: PropTypes.string.isRequired,
     price: PropTypes.oneOfType([PropTypes.number, PropTypes.string]).isRequired,
-    subcategory: PropTypes.string.isRequired,
-dto: PropTypes.oneOfType([PropTypes.number, PropTypes.string]).isRequired */ }
+    type_name: PropTypes.string.isRequired,
+    dto: PropTypes.oneOfType([PropTypes.number, PropTypes.string]).isRequired 
+}
 
 InfoTable.defaultProps = {
     name: "Sin nombre" }
