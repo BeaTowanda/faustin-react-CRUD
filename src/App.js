@@ -8,6 +8,8 @@ import ContentRow2 from "./components/contentRow2";
 import Footer from "./components/footer";
 import Title from "./components/title";
 import DataBase from "./components/dataBase";
+import TittleUser from "./components/tittleUser";
+import DataUsers from "./components/dataUsers";
 
 function App() {
   return (
@@ -24,6 +26,8 @@ function App() {
             <ContentRow2/>
             <Title />
             <DataBase />
+            <TittleUser />
+            <DataUsers />
           </div>
         </div>
         <Footer />

@@ -2,15 +2,17 @@ import React, {useState} from "react";
 import PropTypes from "prop-types";
 
 
-function InfoTable({name, description, price,type_name, dto}) {
+function InfoTable({name, description, price,type_name, colection_name,dto}) {
     return (
         <tbody>
             <tr>
                 <td>{name}</td>
                 <td>{description}</td>
                 <td>{price}</td>
-                <td>
-                    <ul>
+                <td>{type_name}</td>
+                <td>{colection_name}</td>
+                <td>{dto}</td>
+                {/*    <ul>
                         <li>{type_name}</li>
                     </ul>
                 </td>
@@ -23,9 +25,9 @@ function InfoTable({name, description, price,type_name, dto}) {
                             </span>
                         </li> 
                         )}
-                        </ul> */}
+                        </ul> 
                 </td>
-                        <td>{dto}</td> 
+                        <td>{dto}</td> */} 
             </tr>
         </tbody>
     )
@@ -33,19 +35,21 @@ function InfoTable({name, description, price,type_name, dto}) {
 
 InfoTable.propTypes ={
     name: PropTypes.string.isRequired,
-
-   description: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
     price: PropTypes.oneOfType([PropTypes.number, PropTypes.string]).isRequired,
     type_name: PropTypes.string.isRequired,
+    colection_name:PropTypes.string.isRequired,
     dto: PropTypes.oneOfType([PropTypes.number, PropTypes.string]).isRequired 
 }
 
 InfoTable.defaultProps = {
-    name: "Sin nombre" }
-   { /* description: "Sin descripción",
+    name: "Sin nombre" ,
+    description: "Sin descripción",
     price: "",
-    subcategory: "",
-colors:[""]*/}
+    type_name:"",
+    colection_name:"",
+    dto: ""
+}
 
 
 

@@ -1,13 +1,13 @@
 import React from "react";
 
-function Title(props) {
+function TittleUser(props) {
     return (
         <h1 className="h3 mb-2 text-gray-800">
-            All PRODUCTS in the Database
+            All USERS in the Database
         </h1>
     )
 }
 
 
 
-export default Title;
+export default TittleUser;

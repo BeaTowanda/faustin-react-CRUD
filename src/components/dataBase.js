@@ -5,8 +5,8 @@ let datos = [
         name: "Ninguna información",
         description:"Ninguna información",
         price:"$0",
-        type: ["Ninguna información"],
-        colection:["Ninguna infomación"],
+        type: "Ninguna información",
+        colection:"Ninguna infomación",
         discount: 0
     }
 ]
@@ -57,7 +57,8 @@ function DataBase(){
                                 name= {dato.name}
                                 description= {dato.description}
                                 price={dato.price}
-   
+                                type={dato.type_name}
+                                colection={dato.colection_name}
                                 discount={dato.dto}
                             />
                         )}
