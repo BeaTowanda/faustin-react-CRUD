@@ -31,7 +31,7 @@ function LastUser() {
                     </h6>
                 </div>
                 <CardUser 
-                    location={lastUser.location} description={lastUser.userName} urlUser={lastUser.urlUser} 
+                    location={lastUser.location} description={lastUser.description} urlUser={lastUser.urlUser} 
                 />
             </div>
         </div>

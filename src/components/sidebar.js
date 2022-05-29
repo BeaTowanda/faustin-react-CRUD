@@ -35,9 +35,9 @@ function Sidebar() {
             </li>
 
 			<li className="nav-item">
-                <a className="nav-link" href="http://localhost:3030/products/">
+                <a className="nav-link" href="http://localhost:3030/bproducts/listRtos">
                     <i className="fas fa-fw fa-table"></i>
-                    <span>Products</span>
+                    <span>NO</span>
                 </a>
             </li>
 
