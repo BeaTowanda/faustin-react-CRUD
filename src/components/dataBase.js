@@ -57,9 +57,9 @@ function DataBase(){
                                 name= {dato.name}
                                 description= {dato.description}
                                 price={dato.price}
-                                type={dato.type_name}
-                                colection={dato.colection_name}
-                                discount={dato.dto}
+                                tipo={dato.pType}
+                                coleccion={dato.pColection}
+                                dto={dato.dto}
                             />
                         )}
                     </table>

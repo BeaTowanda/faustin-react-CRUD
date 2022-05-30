@@ -2,15 +2,15 @@ import React, {useState} from "react";
 import PropTypes from "prop-types";
 
 
-function InfoTable({name, description, price,type_name, colection_name,dto}) {
+function InfoTable({name, description, price,pType, pColection,dto}) {
     return (
         <tbody>
             <tr>
                 <td>{name}</td>
                 <td>{description}</td>
                 <td>{price}</td>
-                <td>{type_name}</td>
-                <td>{colection_name}</td>
+                <td>{pType}</td>
+                <td>{pColection}</td>
                 <td>{dto}</td>
                 {/*    <ul>
                         <li>{type_name}</li>
@@ -37,8 +37,8 @@ InfoTable.propTypes ={
     name: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
     price: PropTypes.oneOfType([PropTypes.number, PropTypes.string]).isRequired,
-    type_name: PropTypes.string.isRequired,
-    colection_name:PropTypes.string.isRequired,
+    tipo: PropTypes.string.isRequired,
+    coleccion:PropTypes.string.isRequired,
     dto: PropTypes.oneOfType([PropTypes.number, PropTypes.string]).isRequired 
 }
 
@@ -46,8 +46,8 @@ InfoTable.defaultProps = {
     name: "Sin nombre" ,
     description: "Sin descripción",
     price: "",
-    type_name:"",
-    colection_name:"",
+    tipo:"",
+    coleccion:"",
     dto: ""
 }
 
