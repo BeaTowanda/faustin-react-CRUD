@@ -20,6 +20,7 @@ function DataBase(){
         .then(res => res.json())
         .then(data =>{
             let array = data.data
+            console.log(array)
             setProducts(array)
         })
         

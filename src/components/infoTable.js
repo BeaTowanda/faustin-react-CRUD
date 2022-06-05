@@ -2,15 +2,16 @@ import React, {useState} from "react";
 import PropTypes from "prop-types";
 
 
-function InfoTable({name, description, price,pType, pColection,dto}) {
+function InfoTable({name, price,description,tipo, coleccion,dto}) {
     return (
         <tbody>
             <tr>
+                
                 <td>{name}</td>
                 <td>{description}</td>
                 <td>{price}</td>
-                <td>{pType}</td>
-                <td>{pColection}</td>
+                <td>{tipo.type_name}</td>
+                <td>{coleccion.colection_name}</td>
                 <td>{dto}</td>
                 {/*    <ul>
                         <li>{type_name}</li>
